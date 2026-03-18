@@ -12,13 +12,13 @@
 - Log and shell history mining for credential discovery
 
 ---
-Status: "#In-prgress"
+Status: "Finished"
 OS:
 ip:
 Start_Time: 2026-02-07 15:47
 ---
 
-## 馃攳 2. Information Gathering & Enumeration
+## 2. Information Gathering & Enumeration
 
 ### 2.1 Service Scanning
 	This time we only have a external site, so I started with a quick fully scan and verified that the target only has port 22 and 80 opened.
@@ -187,5 +187,6 @@ getent passwd james rose
 | **proof.txt** | THM{c6f684e3b1089cd75f205f93de9fe93d} | ![](<assets/Pasted image 20260221153841.png>) |
 
 ---
+
 
 

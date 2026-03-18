@@ -12,13 +12,13 @@
 - RBCD attack chain with Impacket (addcomputer/rbcd/getST)
 
 ---
-Status: "#Finished"
+Status: "Finished"
 OS:
 ip:
 Start_Time: 2026-02-24 15:49
 ---
 
-## 馃攳 2. Information Gathering & Enumeration
+## 2. Information Gathering & Enumeration
 
 ### 2.1 Service Scanning
 	Now Let's do the base three, which is the final one of this room.
@@ -237,4 +237,5 @@ impacket-wmiexec -k -no-pass k2.thm/Administrator@K2RootDC.k2.thm
 | :------------ | :------------------------------------ | :------------------------------------------ |
 | **local.txt** | THM{400002b4b9fa7decb59019364388b8a3} | ![](<assets/Pasted image 20260224220448.png>) |
 | **proof.txt** | THM{2000099729df1a4ec18bc0346d36b5ba} | ![](<assets/Pasted image 20260224220332.png>) |
+
 

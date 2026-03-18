@@ -12,13 +12,13 @@
 - SeBackupPrivilege hash extraction and pass-the-hash access
 
 ---
-Status: "#Complete"
+Status: "Finished"
 OS:
 ip:
 Start_Time: 2026-02-22 12:08
 ---
 
-## 馃攳 2. Information Gathering & Enumeration
+## 2. Information Gathering & Enumeration
 
 ### 2.1 Service Scanning
 	I used nmap to scan for details of the target. Following the result, I know that this is an active directory.
@@ -155,5 +155,6 @@ reg save HKLM\SAM C:\Users\j.smith\Desktop\SAM.bak /y
 | **root.txt** | THM{a7e9c8149fec53865eff983143b1f5ba} | ![](<assets/Pasted image 20260223185626.png>) |
 
 ---
+
 
 
