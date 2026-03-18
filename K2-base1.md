@@ -1,3 +1,16 @@
+﻿# K2 Base 1
+
+## Overview
+- Platform: TryHackMe
+- Category: Web Exploitation / Linux Privilege Escalation
+- Difficulty: Medium
+
+## Key Techniques
+- Virtual host enumeration and web surface mapping
+- XSS session theft and dashboard data exfiltration
+- UNION-based SQL injection with WAF bypass
+- Log and shell history mining for credential discovery
+
 ---
 Status: "#In-prgress"
 OS:
@@ -5,7 +18,7 @@ ip:
 Start_Time: 2026-02-07 15:47
 ---
 
-## 🔍 2. Information Gathering & Enumeration
+## 馃攳 2. Information Gathering & Enumeration
 
 ### 2.1 Service Scanning
 	This time we only have a external site, so I started with a quick fully scan and verified that the target only has port 22 and 80 opened.
@@ -102,7 +115,7 @@ help' UNION SELECT 1-- -
 ![](<assets/Pasted image 20260221145951.png>)
 	So I tried to exchange the columns places.
 ```
-‘ UNION SELECT email, admin_password, admin_username FROM admin_auth — -
+鈥?UNION SELECT email, admin_password, admin_username FROM admin_auth 鈥?-
 ```
 	This time it returned 200 but doesn't contain any other information.
 
@@ -174,4 +187,5 @@ getent passwd james rose
 | **proof.txt** | THM{c6f684e3b1089cd75f205f93de9fe93d} | ![](<assets/Pasted image 20260221153841.png>) |
 
 ---
+
 

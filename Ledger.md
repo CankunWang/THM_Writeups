@@ -1,3 +1,16 @@
+﻿# Ledger
+
+## Overview
+- Platform: TryHackMe
+- Category: Active Directory / ADCS
+- Difficulty: Hard
+
+## Key Techniques
+- Null-session and LDAP enumeration
+- AS-REP roasting and credential discovery
+- ADCS ESC1 certificate abuse with Certipy
+- Kerberos ticket-based administrator access
+
 ---
 Status: "#Finished"
 OS:
@@ -5,7 +18,7 @@ ip:
 Start_Time: 2026-02-04 17:07
 ---
 
-## 🔍 2. Information Gathering & Enumeration
+## 馃攳 2. Information Gathering & Enumeration
 
 ### 2.1 Service Scanning
 	For this machine, I tried to use browser to directly visit the target ip but failed. So it is clear that highly possible this target is using virtual hosting and only accept domain name visit. So I ran a nmap full scan first and found that this is highly possible an active domain room and the target has netbios and other ports opened. Then I ran a detailed service scan. The results show below.
@@ -172,4 +185,5 @@ wmiexec.py -k -no-pass thm.local/administrator@labyrinth.thm.local
 | **root.txt** | THM{THE_BYPASS_IS_CERTIFIED!} | ![](<assets/Pasted image 20260205171644.png>) |
 
 ---
+
 

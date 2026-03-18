@@ -1,4 +1,17 @@
-﻿---
+﻿# Tempus Fugit Durius
+
+## Overview
+- Platform: TryHackMe
+- Category: Web Exploitation / Linux Privilege Escalation
+- Difficulty: Hard
+
+## Key Techniques
+- Filename-based command injection through upload functionality
+- Reverse shell and container context validation
+- SQL backup credential extraction and hash cracking
+- SGID binary abuse and log-based final privilege escalation
+
+---
 Title: "Tempus_Fugit_Durius - TryHackMe Writeup"
 Author: Cankun Wang
 date: 2026-1-2
@@ -435,5 +448,6 @@ Correct! We are root now.
 - Enumeration depth was the key to uncovering the initial execution path.
 - The path required chaining web exploitation, container context checks, and host escalation.
 - Small privilege signals (SGID and logs) were critical for final root access.
+
 
 

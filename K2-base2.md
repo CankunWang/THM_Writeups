@@ -1,3 +1,16 @@
+﻿# K2 Base 2
+
+## Overview
+- Platform: TryHackMe
+- Category: Active Directory
+- Difficulty: Hard
+
+## Key Techniques
+- Kerberos user enumeration and credential reuse
+- BloodHound privilege path analysis
+- Password reset abuse with impacket-changepasswd
+- SeBackupPrivilege hash extraction and pass-the-hash access
+
 ---
 Status: "#Complete"
 OS:
@@ -5,7 +18,7 @@ ip:
 Start_Time: 2026-02-22 12:08
 ---
 
-## 🔍 2. Information Gathering & Enumeration
+## 馃攳 2. Information Gathering & Enumeration
 
 ### 2.1 Service Scanning
 	I used nmap to scan for details of the target. Following the result, I know that this is an active directory.
@@ -47,7 +60,7 @@ impacket-wmiexec k2.thm/r.bud:'vRMkaVgdfxhW!8'@10.81.145.106
 
 ![](<assets/Pasted image 20260222161128.png>)
 	![](<assets/Pasted image 20260223122406.png>)
-	Next， I download the zip file and analyze it with bloodhound.
+	Next锛?I download the zip file and analyze it with bloodhound.
 
 ![](<assets/Pasted image 20260223133315.png>)
 	Bloodhound tells us that I can escalated directly to administrators.
@@ -142,4 +155,5 @@ reg save HKLM\SAM C:\Users\j.smith\Desktop\SAM.bak /y
 | **root.txt** | THM{a7e9c8149fec53865eff983143b1f5ba} | ![](<assets/Pasted image 20260223185626.png>) |
 
 ---
+
 

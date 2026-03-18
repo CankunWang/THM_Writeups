@@ -1,4 +1,17 @@
-﻿---
+﻿# Year of the Dog
+
+## Overview
+- Platform: TryHackMe
+- Category: Web Exploitation / Linux Privilege Escalation
+- Difficulty: Hard
+
+## Key Techniques
+- Cookie parameter SQL injection with WAF bypass
+- Web shell write and reverse shell execution
+- Gitea abuse (basic auth, 2FA bypass, webhook execution)
+- Container-to-host pivot and SUID-based root escalation
+
+---
 Title: "Year of the dog - TryHackMe Writeup"
 Author: Cankun Wang
 date: 2025-12-10
@@ -306,5 +319,6 @@ Now the bash in host side has the root privilege.
 - Container-to-host relationship validation enabled final root control.
 
 Thanks for reading!
+
 
 
