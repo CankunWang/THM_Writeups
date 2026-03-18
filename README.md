@@ -1,6 +1,6 @@
 ﻿# THM Writeups
 
-A curated collection of my TryHackMe writeups, focused on practical exploitation paths and clear escalation logic.
+A collection of some of my best TryHackMe writeups, focused on practical exploitation paths and clear escalation logic.
 
 ## Featured Writeups (Best Depth)
 
